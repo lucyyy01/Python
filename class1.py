@@ -225,4 +225,41 @@ print(a)
 
 a=input("enter a: ")
 print("value of a is : "+a)
+a=int(input("enter  a:"))
+print("value of a is : "+a)
+
+
+name,id="john",55
+print(name)
+print(id)
+print("your name is:"+name)
+print("your id is:"+str(id))
+print("your name is:"+name +"your id is:"+str(id)) #python version 2
+print(f"your name is: {name} your id is:{id}")# python version 
+name,id=input("enter name&id").split()
+print(name)
+print(id)
+
+name,id=input("enter name&id").split(",")#seperate with comma
+print(name)
+print(id)
+
+print("enter name & id")
+name,id=input().split()
+print(name)
+
+
+# age=18
+age=int(input("enter age: "))
+if age<=8:
+    print("hello")
+
+print("hi")
+
+age=int(input("enter age:"))
+if age>=18:
+    print("you are adult")
+else:
+    print("you are minor")
+
 
