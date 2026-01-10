@@ -56,13 +56,24 @@ class Circularlinkedlist:
                 if t==self.head:
                     break
             print(count)
-    def insertatposition(self):
-        if self.head==None:
-            self.head=Node(int(input("Enter data:")))
-            self.head=self.head
+    # def insertatposition(self):
+    #     if self.head==None:
+    #         self.head=Node(int(input("Enter data:")))
+    #         self.head=self.head
+    #     else:
+    #         t=t.next
+    #         p=int(input("Enter position:"))
+    #         for i in range(1,p):
+    def deletefirstnode(self):
+        if self.head.next==self.head:
+            self.head=None
         else:
-            p=int(input("Enter position:"))
-            
+            t=self.head
+            while t.next!=self.head:
+                t=t.next
+            self.head=self.head.next
+            t.next=self.head
+
 c=Circularlinkedlist()
 c.Insertatlast()
 c.Insertatlast() 
