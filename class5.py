@@ -43,7 +43,7 @@
 # #         data=8
 # # n1=Node()
 # # n1.CreateMember()
-# # print(n1.data) #error
+ # print(n1.data) #error
 
 
 # # class Node:
@@ -317,4 +317,5 @@ s.min()
 s.max()
 s.even()
 s.display()
+
 
